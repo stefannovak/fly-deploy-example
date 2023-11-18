@@ -1,0 +1,49 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:32241",
+      "sslPort": 44349
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5064",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "USERNAME": "consumer",
+        "PASSWORD": "consumer",
+        "HOST": "localhost",
+        "VHOST": "medium-tutorial"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7274;http://localhost:5064",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "USERNAME": "consumer",
+        "PASSWORD": "consumer",
+        "HOST": "localhost",
+        "VHOST": "medium-tutorial"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "USERNAME": "consumer",
+        "PASSWORD": "consumer",
+        "HOST": "localhost",
+        "VHOST": "medium-tutorial"
+      }
+    }
+  }
+}

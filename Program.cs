@@ -12,6 +12,8 @@ public static class Program
             .CreateDefaultBuilder(args)
             .ConfigureServices(services =>
             {
+                Console.WriteLine("Hi Medium!");
+
                 services.AddMassTransit(x =>
                 {
                     x.AddConsumer<LoginErrorConsumer, LoginErrorConsumerDefinition>();
@@ -26,12 +28,12 @@ public static class Program
                                 hostConfig.Username(Environment.GetEnvironmentVariable("USERNAME"));
                                 hostConfig.Password(Environment.GetEnvironmentVariable("PASSWORD"));
                             });
-                        
+
                         config.ConfigureEndpoints(context);
                     });
                 });
             })
             .Build()
             .RunAsync();
-    }   
+    }
 }
